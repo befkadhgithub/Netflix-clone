@@ -1,0 +1,370 @@
+/* ------------------------Basic styling------------------------------ */
+
+body {
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+::placeholder {
+    opacity: 1;
+}
+
+/* ------------------------Header------------------------------ */
+
+header {
+    padding: 0 2rem;
+    background-color: black;
+    color: white;
+}
+
+.header-outermost {
+    margin-inline: auto;
+    max-width: 50rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-el-container {
+    width: 100%;
+    padding: 1rem  0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .section2 button:first-child {
+    background: transparent;
+    border: 1px solid rgb(115, 115, 115);
+}
+
+header .section2 button:first-child:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    border-right: 1px solid white;
+    width: 100px;
+}
+
+.logo img {
+    width: 100px;
+    flex: 1;
+    display: block;
+    padding-right: 1rem;
+}
+
+.mobile-help {
+    display: none;
+}
+
+/* ------------------------Get Help pop up------------------------------ */
+
+.bg {
+    background-color: rgb(229, 229, 229);
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.get-help-container {
+    height: fit-content;
+    max-width: 54rem;
+    padding: .5rem 2rem;
+    margin-inline: auto;
+}
+
+.get-help-box {
+    position: relative;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin: 1rem auto;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 1px 10px rgb(192, 192, 192);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.get-help-box img {
+    display: block;
+    margin: auto;
+    width: 26px;
+}
+
+.get-help-box p:first-child {
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.get-help-box p {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.get-help-box a {
+    color: #ee5856;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    width: 10rem;
+}
+
+/* ------------------------Contact Us------------------------------ */
+
+.contact-us {
+    max-width: 54rem;
+    margin-bottom: 3rem;
+    margin-inline: auto;
+    padding: .5rem 2rem;
+}
+
+.contact-us h1 {
+    margin-bottom: 1.5rem;
+}
+
+.contact-us p {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.input-div {
+    position: relative;
+}
+
+.contact-us input {
+    padding: .5rem 1rem;
+    width: 100%;
+    border: solid rgb(208, 208, 208);
+    border-radius: 4px;
+    outline: 0;
+}
+
+.contact-us input:focus + .right-arrow img {
+    display: block;
+}
+
+.quick-links {
+    max-width: 54rem;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    padding: .5rem 2rem;
+}
+
+.right-arrow img {
+    display: none;
+    position: absolute;
+    width: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+}
+
+.links {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    padding: .8rem;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links a:hover > .right-arrow-red {
+    animation: quickHorizontalMov .5s alternate;
+}
+
+@keyframes quickHorizontalMov {
+    0% {
+        transform: translateX(35%);
+    }
+    75% {
+        transform: translateX(0);
+    }
+}
+
+.links img {
+    width: 20px;
+}
+
+.links img:first-child {
+    margin-right: .8rem;
+}
+
+.links img:last-child {
+    width: 13px;
+    position: absolute;
+    right: 0;
+}
+
+/* ------------------------Footer------------------------------ */
+
+.footer {
+    padding: 2rem;
+    background: linear-gradient(190deg, #7c0a12, black, black);
+}
+
+.footer-container {
+    margin-inline: auto;
+    max-width: 50rem
+}
+
+.footer ul {
+    margin-top: 2.7rem;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-top: 1rem;
+}
+
+.footer ul a {
+    color: rgb(147, 147, 147);
+    text-decoration: none;
+}
+
+.footer ul a:hover {
+    text-decoration: underline;
+} 
+
+.language-select {
+    width: 13rem;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.language-select img {
+    width: 40px;
+}
+
+.language-select input {
+    border-radius: 5px;
+}
+
+#language {
+    cursor: pointer;
+    padding: 0 1rem;
+    text-align: left;
+    font-size: 17px;
+    color: rgb(159, 159, 159);
+    outline: 0;
+    transition: .5s;
+}
+
+#language:hover {
+    background-color: rgb(159, 159, 159);
+    color: white;
+    transition: .5s;
+}
+
+.down-icon-white.active {
+    display: block;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.down-icon-gray.active {
+    display: none;
+}
+
+.down-icon-white {
+    display: none;
+}
+
+.language-select  .down-icon {
+    width: 16px;
+    margin-left: 0;
+}
+
+/* ------------------------Media Querries------------------------------ */
+
+@media (max-width: 828px) {
+    .get-help-container {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 521px) {
+    .get-help-container {
+        padding: 1rem;
+    }
+
+    .get-help-box a, .get-help-box p {
+        font-size: 10px;
+    }
+
+    .get-help-box img {
+        width: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .header-el-container {
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .logo {
+        position: relative;
+        border: none;
+    }
+
+    .logo img {
+        position: absolute;
+        top: 0;
+        width: 40px;
+        padding: 0;
+    }
+
+    .section1 {
+        display: none;
+    }
+
+    .section1 a {
+        display: none;
+    }
+
+    .mobile-help {
+        margin-top: -.8rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-help a {
+        padding-left: .5rem;
+        font-size: 12px;
+        margin-top: 2.5rem;
+    }
+}

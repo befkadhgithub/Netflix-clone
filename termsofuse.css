@@ -1,0 +1,90 @@
+.header-outermost {
+    max-width: 78rem;
+}
+
+nav {
+    margin-inline: auto;
+    background: transparent;
+    max-width: 82rem;
+    padding: 2rem 2rem;
+}
+
+nav button {
+    padding: .2rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background: transparent;
+    color: black;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 13px;
+    color: #e93535;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:hover > .right-arrow-red {
+    animation: quickHorizontalMov .5s linear;
+}
+
+@keyframes quickHorizontalMov {
+    0% {
+        transform: translateX(-35%);
+    }
+
+    35% {
+        transform: translateX(0);
+    }
+}
+
+nav a img {
+    width: 20px;
+}
+
+nav button:hover {
+    background: transparent;
+}
+
+main {
+    display: flex;
+    max-width: 82rem;
+    margin-inline: auto;
+}
+
+.main-content {
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.main-content h1 {
+    margin-bottom: 1.5rem;
+}
+
+.main-content .tc-text p {
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.topic {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.details {
+    margin-left: 3rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+

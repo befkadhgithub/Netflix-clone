@@ -1,0 +1,5 @@
+- Responsiveness
+    - index - done
+    - sign-in page - done
+    - contact us page - done
+    - terms of use page - done
