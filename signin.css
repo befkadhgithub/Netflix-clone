@@ -184,6 +184,30 @@ button:hover {
     color: #0271eb;
 }
 
+.placeholder {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.show-hide {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 5rem;
+    padding: 1rem;
+    background-color: grey;
+    color: rgb(200, 200, 200);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    user-select: none;
+    display: none;
+    justify-content: center;
+}
+
+
 /* ------------------------Footer------------------------------ */
 
 .footer {
